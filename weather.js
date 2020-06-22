@@ -25,15 +25,15 @@ function get_result(query){
 	})
 	
 }
-	var x=get_result("Mumbai");
-	x.then(function(result){
-		 usr=result;
-		console.log(usr["main"].temp);
-		var temperature=toString(usr["main"].temp)
-		console.log(temperature)
-	},function(err){
-		console.log(err);
-	})
+	// var x=get_result("Mumbai");
+	// x.then(function(result){
+	// 	 usr=result;
+	// 	console.log(usr["main"].temp);
+	// 	var temperature=toString(usr["main"].temp)
+	// 	console.log(temperature)
+	// },function(err){
+	// 	console.log(err);
+	// })
 	
     
 
