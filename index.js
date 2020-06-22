@@ -36,7 +36,7 @@ app.post('/webhook', (req, res) => {
 app.get('/webhook', (req, res) => {
 
     // Your verify token. Should be a random string.
-    let VERIFY_TOKEN = <VERIFY_TOKEN>
+    let VERIFY_TOKEN = ""
 
     // Parse the query params
     let mode = req.query['hub.mode'];
@@ -146,7 +146,7 @@ function sendMsg(sender_id,res){
       }
       request({
         "uri": "https://graph.facebook.com/v2.6/me/messages",
-        "qs": { "access_token": <ACCESS_TOKEN> },
+        "qs": { "access_token": "" },
         "method": "POST",
         "json": request_body
       }, (err, resP, body) => {
